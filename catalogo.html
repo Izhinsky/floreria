@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Catálogo - Florería Bella Flor</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header>
+    <h1>💐 Catálogo de Arreglos</h1>
+    <p>Elige tu diseño favorito y pídelo por WhatsApp</p>
+  </header>
+
+  <main class="container">
+    <h2 id="seleccion">Todos los arreglos</h2>
+
+    <section class="grid">
+      <div class="producto">
+        <img src="images/rosas.jpg" alt="Rosas Premium">
+        <div class="info">
+          <h3>Rosas Premium</h3>
+          <p class="precio">S/ 80.00</p>
+          <button onclick="pedirWhatsApp('Rosas Premium')">Pedir por WhatsApp</button>
+        </div>
+      </div>
+
+      <div class="producto">
+        <img src="images/girasoles.jpg" alt="Girasoles Deluxe">
+        <div class="info">
+          <h3>Girasoles Deluxe</h3>
+          <p class="precio">S/ 70.00</p>
+          <button onclick="pedirWhatsApp('Girasoles Deluxe')">Pedir por WhatsApp</button>
+        </div>
+      </div>
+
+      <div class="producto">
+        <img src="images/tulipanes.jpg" alt="Tulipanes Elegantes">
+        <div class="info">
+          <h3>Tulipanes Elegantes</h3>
+          <p class="precio">S/ 90.00</p>
+          <button onclick="pedirWhatsApp('Tulipanes Elegantes')">Pedir por WhatsApp</button>
+        </div>
+      </div>
+    </section>
+
+    <p style="margin-top:20px;">
+      <a href="index.html">⬅ Volver al inicio</a>
+    </p>
+  </main>
+
+  <script>
+    // Lee el producto desde la URL: catalogo.html?producto=Rosas%20Rojas
+    const params = new URLSearchParams(window.location.search);
+    const producto = params.get("producto");
+    if (producto) {
+      document.getElementById("seleccion").textContent = `Arreglos relacionados a: ${producto}`;
+    }
+
+    function pedirWhatsApp(nombre) {
+      const numero = "51999999999"; // cámbialo
+      const mensaje = `Hola, quiero pedir este arreglo: ${nombre}`;
+      const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
+      window.open(url, "_blank");
+    }
+  </script>
+
+</body>
+</html>
