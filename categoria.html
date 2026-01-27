@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Catálogo - Florería Bella Flor</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header>
+    <h1>💐 Catálogo de Arreglos</h1>
+    <p>Elige tu diseño favorito y pídelo por WhatsApp</p>
+  </header>
+
+  <main class="container">
+    <h2 id="seleccion">Cargando...</h2>
+
+    <!-- ✅ ESTE ES EL ÚNICO GRID (vacío, lo llena el JS) -->
+    <section class="grid" id="productos-grid"></section>
+
+    <p style="margin-top:20px;">
+      <a href="arreglos.html">⬅ Volver a categorías</a>
+    </p>
+  </main>
+
+  <!-- ✅ LIGHTBOX -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox(event)">
+    <img id="lightboxImg" alt="">
+  </div>
+
+  <script src="js/main.js"></script>
+  <script>
+    initCategoriaPage();
+  </script>
+
+</body>
+</html>

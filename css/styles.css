@@ -36,49 +36,49 @@ h2 {
 }
 
 /* ===== GRID PRODUCTOS ===== */
-.grid {
+.grid{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 18px;
+  align-items: start;
 }
 
 /* ===== TARJETA PRODUCTO ===== */
-.producto {
-  background: white;
+.producto{
+  background: #fff;
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-  transition: transform 0.15s ease;
+  box-shadow: 0 10px 25px rgba(0,0,0,.08);
+  transition: transform .15s ease;
 }
 
-.producto:hover {
-  transform: translateY(-3px);
-}
+.producto:hover{ transform: translateY(-3px); }
 
 /* ===== IMAGEN PRODUCTO ===== */
-.producto img {
+.producto img{
   width: 100%;
-  height: 200px;        /* tamaño visual uniforme */
-  object-fit: cover;   /* recorte sin deformar */
+  height: 160px;      /* 👈 más chico aún */
+  object-fit: cover;
   display: block;
 }
 
-/* ===== INFO PRODUCTO ===== */
-.producto .info {
-  padding: 14px;
+/* ===== INFO ===== */
+.producto .info{
+  padding: 12px 12px 14px;
   text-align: left;
 }
 
-.producto h3 {
-  margin: 0 0 6px 0;
-  font-size: 18px;
+.producto h3{
+  margin: 0 0 6px;
+  font-size: 16px;
 }
 
-.precio {
+.precio{
   font-weight: bold;
-  font-size: 16px;
-  margin: 0 0 12px 0;
+  font-size: 15px;
+  margin: 0 0 10px 0;
 }
+
 
 /* ===== BOTÓN ===== */
 button {
@@ -314,3 +314,92 @@ footer {
   .hero h1 { font-size: 34px; }
 }
 
+.lightbox{
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.75);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  z-index: 9999;
+}
+
+.lightbox.open{ display: flex; }
+
+.lightbox img{
+  max-width: 95vw;
+  max-height: 90vh;
+  border-radius: 14px;
+  box-shadow: 0 12px 40px rgba(0,0,0,.35);
+}
+
+/* Grid más tipo catálogo */
+.grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 18px;
+  align-items: start;
+}
+
+/* Tarjeta */
+.producto{
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 18px rgba(0,0,0,.08);
+}
+
+/* Imagen tamaño fijo (no gigante) */
+.producto img{
+  width: 100%;
+  height: 170px;      /* ajusta: 150-200 */
+  object-fit: cover;  /* recorta bonito */
+  display: block;
+}
+
+/* Info compacta */
+.producto .info{
+  padding: 12px 12px 14px;
+}
+
+.producto .info h3{
+  margin: 0 0 6px;
+  font-size: 1rem;
+}
+
+.producto .precio{
+  margin: 0 0 10px;
+  font-weight: 700;
+}
+
+.producto button{
+  width: 100%;
+  border: 0;
+  padding: 10px 12px;
+  border-radius: 10px;
+}
+
+body.lightbox-open{
+  overflow: hidden;
+}
+
+body.lightbox-open .container,
+body.lightbox-open header,
+body.lightbox-open .navbar{
+  filter: blur(6px) brightness(0.9);
+  transform: scale(0.98);
+  transition: filter .2s ease, transform .2s ease;
+}
+
+#productos-grid{
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+
+#productos-grid .producto img{
+  height: 160px;
+}
+
+body.lightbox-open{
+  overflow: hidden;
+}
