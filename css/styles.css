@@ -403,3 +403,48 @@ body.lightbox-open .navbar{
 body.lightbox-open{
   overflow: hidden;
 }
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.lightbox.open {
+  display: flex;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 12px;
+}
+
+.lightbox .nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 50px;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  padding: 10px;
+}
+
+.lightbox .prev { left: 30px; }
+.lightbox .next { right: 30px; }
+
+.lightbox .nav:hover {
+  color: #ff3b8d;
+}
+.nav-links li a {
+  font-weight: 600;
+}
+
+.nav-links li:last-child a {
+  font-weight: normal;
+  opacity: 0.85;
+}

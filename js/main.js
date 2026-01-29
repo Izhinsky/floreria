@@ -1,3 +1,6 @@
+let lightboxImages = [];
+let currentIndex = 0;
+
 let cartCount = 0;
 
 function updateCart() {
@@ -451,20 +454,69 @@ const PRODUCTOS = {
     }
   },
 
-  eventos_realizados: {
-    tipo: "subcategorias",
-    nombre: "Entregas Exitosas - Eventos Realizados",
-    subcategorias: {
-      // puedes cambiar estos nombres a los que quieras
-      entregas: {
-        nombre: "Entregas",
-        carpeta: "images/eventos_realizados", // crea esta carpeta o usa la que ya tengas
-        productos: []
-      }
-    }
-  },
-
-};
+  eventos_realizados: [
+    { nombre: "Entrega 01", img: "images/eventos_realizados/IMG-20220703-WA0008.jpg" },
+    { nombre: "Entrega 02", img: "images/eventos_realizados/IMG-20220810-WA0004.jpg" },
+    { nombre: "Entrega 03", img: "images/eventos_realizados/IMG-20230827-WA0000.jpg" },
+    { nombre: "Entrega 04", img: "images/eventos_realizados/IMG-20260126-WA0000.jpg" },
+    { nombre: "Entrega 05", img: "images/eventos_realizados/IMG-20260126-WA0001.jpg" },
+    { nombre: "Entrega 06", img: "images/eventos_realizados/IMG-20260126-WA0002.jpg" },
+    { nombre: "Entrega 07", img: "images/eventos_realizados/IMG-20260126-WA0004.jpg" },
+    { nombre: "Entrega 08", img: "images/eventos_realizados/IMG-20260126-WA0005.jpg" },
+    { nombre: "Entrega 09", img: "images/eventos_realizados/IMG-20260126-WA0006.jpg" },
+    { nombre: "Entrega 10", img: "images/eventos_realizados/IMG-20260126-WA0007.jpg" },
+    { nombre: "Entrega 11", img: "images/eventos_realizados/IMG-20260126-WA0008.jpg" },
+    { nombre: "Entrega 12", img: "images/eventos_realizados/IMG-20260126-WA0009.jpg" },
+    { nombre: "Entrega 13", img: "images/eventos_realizados/IMG-20260126-WA0010.jpg" },
+    { nombre: "Entrega 14", img: "images/eventos_realizados/IMG-20260126-WA0011.jpg" },
+    { nombre: "Entrega 15", img: "images/eventos_realizados/IMG-20260126-WA0012.jpg" },
+    { nombre: "Entrega 16", img: "images/eventos_realizados/IMG-20260126-WA0013.jpg" },
+    { nombre: "Entrega 17", img: "images/eventos_realizados/IMG-20260126-WA0014.jpg" },
+    { nombre: "Entrega 18", img: "images/eventos_realizados/IMG-20260126-WA0015.jpg" },
+    { nombre: "Entrega 19", img: "images/eventos_realizados/IMG-20260126-WA0016.jpg" },
+    { nombre: "Entrega 20", img: "images/eventos_realizados/IMG-20260126-WA0017.jpg" },
+    { nombre: "Entrega 21", img: "images/eventos_realizados/IMG-20260126-WA0018.jpg" },
+    { nombre: "Entrega 22", img: "images/eventos_realizados/IMG-20260126-WA0019.jpg" },
+    { nombre: "Entrega 23", img: "images/eventos_realizados/IMG-20260126-WA0020.jpg" },
+    { nombre: "Entrega 24", img: "images/eventos_realizados/IMG-20260126-WA0021.jpg" },
+    { nombre: "Entrega 25", img: "images/eventos_realizados/IMG-20260126-WA0022.jpg" },
+    { nombre: "Entrega 26", img: "images/eventos_realizados/IMG-20260126-WA0023.jpg" },
+    { nombre: "Entrega 27", img: "images/eventos_realizados/IMG-20260126-WA0024.jpg" },
+    { nombre: "Entrega 28", img: "images/eventos_realizados/IMG-20260126-WA0025.jpg" },
+    { nombre: "Entrega 29", img: "images/eventos_realizados/IMG-20260126-WA0026.jpg" },
+    { nombre: "Entrega 30", img: "images/eventos_realizados/IMG-20260126-WA0027.jpg" },
+    { nombre: "Entrega 31", img: "images/eventos_realizados/IMG-20260126-WA0028.jpg" },
+    { nombre: "Entrega 32", img: "images/eventos_realizados/IMG-20260126-WA0029.jpg" },
+    { nombre: "Entrega 33", img: "images/eventos_realizados/IMG-20260126-WA0030.jpg" },
+    { nombre: "Entrega 34", img: "images/eventos_realizados/IMG-20260126-WA0031.jpg" },
+    { nombre: "Entrega 35", img: "images/eventos_realizados/IMG-20260126-WA0032.jpg" },
+    { nombre: "Entrega 36", img: "images/eventos_realizados/IMG-20260126-WA0033.jpg" },
+    { nombre: "Entrega 37", img: "images/eventos_realizados/IMG-20260126-WA0034.jpg" },
+    { nombre: "Entrega 38", img: "images/eventos_realizados/IMG-20260126-WA0035.jpg" },
+    { nombre: "Entrega 39", img: "images/eventos_realizados/IMG-20260126-WA0036.jpg" },
+    { nombre: "Entrega 40", img: "images/eventos_realizados/IMG-20260126-WA0037.jpg" },
+    { nombre: "Entrega 41", img: "images/eventos_realizados/IMG-20260126-WA0038.jpg" },
+    { nombre: "Entrega 42", img: "images/eventos_realizados/IMG-20260126-WA0039.jpg" },
+    { nombre: "Entrega 43", img: "images/eventos_realizados/IMG-20260126-WA0040.jpg" },
+    { nombre: "Entrega 44", img: "images/eventos_realizados/IMG-20260126-WA0041.jpg" },
+    { nombre: "Entrega 45", img: "images/eventos_realizados/IMG-20260126-WA0042.jpg" },
+    { nombre: "Entrega 46", img: "images/eventos_realizados/IMG-20260126-WA0043.jpg" },
+    { nombre: "Entrega 47", img: "images/eventos_realizados/IMG-20260126-WA0044.jpg" },
+    { nombre: "Entrega 48", img: "images/eventos_realizados/IMG-20260126-WA0045.jpg" },
+    { nombre: "Entrega 49", img: "images/eventos_realizados/IMG-20260126-WA0046.jpg" },
+    { nombre: "Entrega 50", img: "images/eventos_realizados/IMG-20260126-WA0047.jpg" },
+    { nombre: "Entrega 51", img: "images/eventos_realizados/IMG-20260126-WA0048.jpg" },
+    { nombre: "Entrega 52", img: "images/eventos_realizados/IMG-20260126-WA0049.jpg" },
+    { nombre: "Entrega 53", img: "images/eventos_realizados/IMG-20260126-WA0050.jpg" },
+    { nombre: "Entrega 54", img: "images/eventos_realizados/IMG-20260126-WA0051.jpg" },
+    { nombre: "Entrega 55", img: "images/eventos_realizados/IMG-20260126-WA0053.jpg" },
+    { nombre: "Entrega 56", img: "images/eventos_realizados/IMG-20260126-WA0054.jpg" },
+    { nombre: "Entrega 57", img: "images/eventos_realizados/IMG-20260126-WA0055.jpg" },
+    { nombre: "Entrega 58", img: "images/eventos_realizados/IMG-20260126-WA0056.jpg" },
+    { nombre: "Entrega 59", img: "images/eventos_realizados/IMG-20260126-WA0057.jpg" },
+    { nombre: "Entrega 60", img: "images/eventos_realizados/IMG-20260126-WA0058.jpg" }
+  ],
+}
 
 function renderCategoriasArreglos() {
   const cont = document.getElementById("arreglos-categorias");
@@ -490,6 +542,15 @@ function initCategoriaPage() {
   const grid = document.getElementById("productos-grid");
   if (!grid) return;
 
+  // ✅ Mensaje especial para ciertas categorías
+  const msgEl = document.getElementById("mensajeCategoria");
+  if (msgEl) {
+    msgEl.textContent = (catId === "eventos_realizados")
+      ? 'Gracias por confiar en "Floristería el Paraíso"'
+      : "";
+  }
+
+
   const cat = CATEGORIAS_ARREGLOS.find(c => c.id === catId);
 
   if (!cat) {
@@ -508,22 +569,33 @@ function initCategoriaPage() {
       grid.innerHTML = `<p>Por ahora no hay productos en esta categoría.</p>`;
       return;
     }
+    lightboxImages = data.map(p => p.img);
 
     grid.innerHTML = data.map(p => `
-      <div class="producto">
-        <img
-          src="${p.img}"
-          alt="${p.nombre}"
-          style="cursor: zoom-in"
-          onclick="openLightbox('${p.img}', '${p.nombre.replace(/'/g, "\\'")}')"
-        >
-        <div class="info">
-          <h3>${p.nombre}</h3>
-          <p class="precio">S/ ${Number(p.precio).toFixed(2)}</p>
-          <button onclick="pedirWhatsApp('${p.nombre.replace(/'/g, "\\'")}')">Pedir por WhatsApp</button>
-        </div>
-      </div>
-    `).join("");
+  <div class="producto">
+    <img
+      src="${p.img}"
+      alt="${p.nombre}"
+      style="cursor: zoom-in"
+      onclick="openLightboxIndex(${lightboxImages.indexOf(p.img)})"
+
+    >
+    <div class="info">
+      <h3>${p.nombre}</h3>
+
+      ${catId === "eventos_realizados"
+        ? ""
+        : `<p class="precio">S/ ${Number(p.precio).toFixed(2)}</p>`
+      }
+
+      ${catId === "eventos_realizados"
+        ? ""
+        : `<button onclick="pedirWhatsApp('${p.nombre.replace(/'/g, "\\'")}')">Pedir por WhatsApp</button>`
+      }
+    </div>
+  </div>
+`).join("");
+
     return;
   }
 
@@ -631,6 +703,29 @@ function closeLightbox(e) {
     document.getElementById("lightbox").classList.remove("open");
     document.body.classList.remove("lightbox-open");
   }
+}
+function openLightboxIndex(index) {
+  currentIndex = index;
+  const box = document.getElementById("lightbox");
+  const img = document.getElementById("lightboxImg");
+  if (!box || !img) return;
+
+  img.src = lightboxImages[currentIndex];
+  box.classList.add("open");
+  document.body.classList.add("lightbox-open");
+}
+
+function nextImage(e) {
+  e.stopPropagation();
+  currentIndex = (currentIndex + 1) % lightboxImages.length;
+  document.getElementById("lightboxImg").src = lightboxImages[currentIndex];
+}
+
+function prevImage(e) {
+  e.stopPropagation();
+  currentIndex =
+    (currentIndex - 1 + lightboxImages.length) % lightboxImages.length;
+  document.getElementById("lightboxImg").src = lightboxImages[currentIndex];
 }
 
 

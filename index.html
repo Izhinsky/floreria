@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Florería el Paraíso</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Floristería el Paraíso</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
+
 <body>
 
   <!-- ===== NAVBAR ===== -->
@@ -13,14 +15,37 @@
     <div class="nav-left">
       <a class="brand" href="index.html">
         <span class="brand-icon">🌸</span>
-        <span class="brand-name">Florería el Paraíso</span>
+        <span class="brand-name">Floristería el Paraíso</span>
       </a>
 
       <ul class="nav-links">
-        <li><a href="arreglos.html">Arreglos</a></li>
-        <li><a href="catalogo.html">Arreglos</a></li>
-        <li><a href="#contacto">Contacto</a></li>
+        <li>
+          <a href="categoria.html?id=eventos_sociales">
+            Eventos Sociales
+          </a>
+        </li>
+
+        <li>
+          <a href="arreglos.html">
+            Arreglos Florales
+          </a>
+        </li>
+
+        <li>
+          <a href="categoria.html?id=eventos_realizados">
+            Entregas Exitosas
+          </a>
+        </li>
+
+        <li>
+          <a href="https://wa.me/51934042514?text=Hola,%20quiero%20información%20sobre%20sus%20arreglos"
+            target="_blank">
+             Contacto
+          </a>
+        </li>
+
       </ul>
+
     </div>
 
     <div class="nav-right">
@@ -42,7 +67,7 @@
   <!-- ===== HERO ===== -->
   <header class="hero">
     <div class="hero-content">
-      <h1>Florería el Paraíso</h1>
+      <h1>Floristería el Paraíso</h1>
       <p>Flores y Regalos</p>
 
       <div class="hero-actions">
@@ -58,7 +83,7 @@
 
     <section class="grid">
       <div class="producto">
-        <img src="images/eventossociales.jpg" alt="Rosas Rojas">
+        <img src="images/eventossociales.jpg" alt="Eventos Sociales">
         <div class="info">
           <h3>Eventos Sociales</h3>
           <button onclick="window.location.href='categoria.html?id=eventos_sociales'">Ver</button>
@@ -66,7 +91,7 @@
       </div>
 
       <div class="producto">
-        <img src="images/arreglosflorales.jpg" alt="Arreglos">
+        <img src="images/arreglosflorales.jpg" alt="Arreglos Florales">
         <div class="info">
           <h3>Arreglos Florales</h3>
           <button onclick="window.location.href='arreglos.html'">Ver</button>
@@ -74,10 +99,10 @@
       </div>
 
       <div class="producto">
-        <img src="images/eventosrealizados.jpg" alt="Tulipanes">
+        <img src="images/eventosrealizados.jpg" alt="Entregas Exitosas - Eventos Realizados">
         <div class="info">
           <h3>Entregas Exitosas - Eventos Realizados</h3>
-         <button onclick="window.location.href='categoria.html?id=eventos_realizados'">Ver</button>
+          <button onclick="window.location.href='categoria.html?id=eventos_realizados'">Ver</button>
         </div>
       </div>
     </section>
@@ -91,12 +116,11 @@
 
   <!-- ===== BOTÓN FLOTANTE WHATSAPP ===== -->
   <a class="whatsapp" target="_blank"
-     href="https://wa.me/51934042514?text=Hola,%20quiero%20hacer%20un%20pedido%20en%20Florer%C3%ADa%20Bella%20Flor">
-    WhatsApp 💬
-  </a>
+   href="https://wa.me/51934042514?text=Hola,%20quiero%20hacer%20un%20pedido%20en%20Florister%C3%ADa%20el%20Para%C3%ADso">
+  WhatsApp 💬
+</a>
 
   <script src="js/main.js"></script>
 </body>
+
 </html>
-
-
