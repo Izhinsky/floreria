@@ -68,12 +68,12 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 
   // Botón carrito (demo)
-  const cartBtn = document.getElementById("cartBtn");
+  /*const cartBtn = document.getElementById("cartBtn");
   if (cartBtn) {
     cartBtn.addEventListener("click", () => {
       alert(`🛒 Carrito: ${cartCount} producto(s)\n(Esto es demo, luego hacemos el carrito real)`);
     });
-  }
+  }*/
 });
 
 // ====== CATEGORÍAS (7) ======
@@ -727,6 +727,32 @@ function prevImage(e) {
     (currentIndex - 1 + lightboxImages.length) % lightboxImages.length;
   document.getElementById("lightboxImg").src = lightboxImages[currentIndex];
 }
+// ===== BOTÓN VOLVER ARRIBA (GLOBAL + SOLO MÓVIL) =====
+document.addEventListener("DOMContentLoaded", () => {
+  const btnTop = document.getElementById("btnTop");
+  if (!btnTop) return;
+
+  const isMobile = () => window.innerWidth <= 768;
+
+  window.addEventListener("scroll", () => {
+    if (!isMobile()) return;
+
+    if (window.scrollY > 300) {
+      btnTop.classList.add("show");
+    } else {
+      btnTop.classList.remove("show");
+    }
+  });
+
+  btnTop.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+});
+
+
 
 
 
