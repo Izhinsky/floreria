@@ -93,44 +93,44 @@ const CATEGORIAS_ARREGLOS = [
 // ====== PRODUCTOS POR CATEGORÍA (ejemplo) ======
 const PRODUCTOS = {
   rosas: [
-    { nombre: 'Arreglo de rosas 6 y 4 girasoles', precio: 55, img: 'images/rosas/1.-arreglo de rosas 6 y 4 girasoles- S_55 soles.jpg' },
-    { nombre: 'Arreglo clasico de 5 rosas', precio: 40, img: 'images/rosas/2.-arreglo clasico de 5 rosas- s.40 soles.jpg' },
-    { nombre: 'Arreglo rosas 10,gerbera,girasol', precio: 55, img: 'images/rosas/3.-arreglo rosas 10,gerbera,girasol S.55  .jpg' },
-    { nombre: 'Arreglo clasico 5 rosas mas detalles', precio: 45, img: 'images/rosas/4.-arreglo clasico 5 rosas mas detalles S.45 soles.jpg' },
-    { nombre: 'Arreglo de 12 rosas mas peluche', precio: 85, img: 'images/rosas/5.-arreglo de 12 rosas  mas peluche S.85 soles.jpg' },
-    { nombre: 'Arreglos 8 rosas amarillas y girasol', precio: 50, img: 'images/rosas/6.-arreglos 8 rosas amarillas y girasol S.50 soles .jpg' },
-    { nombre: 'Arreglos de 8 rosas girasol,gerbera', precio: 50, img: 'images/rosas/7.-arreglos de 8 rosas girasol,gerbera S.50 soles .jpg' },
-    { nombre: 'Arreglo de 8 rosas gerberas', precio: 50, img: 'images/rosas/8.-arreglo de 8 rosas gerberas S. 50 soles.jpg' },
-    { nombre: 'Arreglos de 5 rosas girasol gerbera', precio: 40, img: 'images/rosas/9.-arreglos de 5 rosas girasol gerbera S.40 soles.jpg' },
-    { nombre: 'Arreglo 3 rosas rosadas', precio: 30, img: 'images/rosas/10.-arreglo 3 rosas rosadas S.30 soles .jpg' },
-    { nombre: 'Arreglos de 5 rosas girasol,gerberas', precio: 40, img: 'images/rosas/11.-arreglos de 5 rosas girasol,gerberas S.40 soles .jpg' },
-    { nombre: 'Arreglo de 5 rosas mas globo', precio: 48, img: 'images/rosas/12.-arreglo de 5 rosas mas globo S.48 soles.jpg' },
-    { nombre: 'Arreglos de 12 rosas', precio: 60, img: 'images/rosas/13.-arreglos de 12 rosas S.60 soles .jpg' },
-    { nombre: 'Arreglos de 12 rosas ginger, gerbera,girasol', precio: 65, img: 'images/rosas/14.-arreglos de 12 rosas ginger, gerbera,girasol S.65 soles .jpg' },
+    { nombre: 'Arreglo de rosas (6 rosas y 4 girasoles)', precio: 55, img: 'images/rosas/1.-arreglo de rosas 6 y 4 girasoles- S_55 soles.jpg' },
+    { nombre: 'Arreglo clásico de 5 rosas', precio: 40, img: 'images/rosas/2.-arreglo clasico de 5 rosas- s.40 soles.jpg' },
+    { nombre: 'Arreglo de 10 rosas con gerbera y girasol', precio: 55, img: 'images/rosas/3.-arreglo rosas 10,gerbera,girasol S.55  .jpg' },
+    { nombre: 'Arreglo clásico de 5 rosas con detalles', precio: 45, img: 'images/rosas/4.-arreglo clasico 5 rosas mas detalles S.45 soles.jpg' },
+    { nombre: 'Arreglo de 12 rosas con peluche', precio: 85, img: 'images/rosas/5.-arreglo de 12 rosas  mas peluche S.85 soles.jpg' },
+    { nombre: 'Arreglo de 8 rosas amarillas con girasol', precio: 50, img: 'images/rosas/6.-arreglos 8 rosas amarillas y girasol S.50 soles .jpg' },
+    { nombre: 'Arreglo de 8 rosas con girasol y gerbera', precio: 50, img: 'images/rosas/7.-arreglos de 8 rosas girasol,gerbera S.50 soles .jpg' },
+    { nombre: 'Arreglo de 8 rosas con gerberas', precio: 50, img: 'images/rosas/8.-arreglo de 8 rosas gerberas S. 50 soles.jpg' },
+    { nombre: 'Arreglo de 5 rosas con girasol y gerbera', precio: 40, img: 'images/rosas/9.-arreglos de 5 rosas girasol gerbera S.40 soles.jpg' },
+    { nombre: 'Arreglo de 3 rosas rosadas', precio: 30, img: 'images/rosas/10.-arreglo 3 rosas rosadas S.30 soles .jpg' },
+    { nombre: 'Arreglo de 5 rosas con girasol y gerberas', precio: 40, img: 'images/rosas/11.-arreglos de 5 rosas girasol,gerberas S.40 soles .jpg' },
+    { nombre: 'Arreglo de 5 rosas con globo', precio: 48, img: 'images/rosas/12.-arreglo de 5 rosas mas globo S.48 soles.jpg' },
+    { nombre: 'Arreglo de 12 rosas', precio: 60, img: 'images/rosas/13.-arreglos de 12 rosas S.60 soles .jpg' },
+    { nombre: 'Arreglo de 12 rosas con jengibre, gerbera y girasol', precio: 65, img: 'images/rosas/14.-arreglos de 12 rosas ginger, gerbera,girasol S.65 soles .jpg' },
     { nombre: 'Arreglo de 5 rosas', precio: 40, img: 'images/rosas/15.-arreglo de 5 rosas S.40 soles .jpg' },
-    { nombre: 'Arreglo de rosas,liliums,gerberas', precio: 70, img: 'images/rosas/16.-arreglo de rosas,liliums,gerberas,S.70 soles .jpg' },
-    { nombre: 'Arreglos de 5 rosas', precio: 40, img: 'images/rosas/17.-arreglos de 5 rosas S.40 soles .jpg' },
-    { nombre: 'Arreglo de 3 rosas,girasol', precio: 30, img: 'images/rosas/18.-arreglo de 3 rosas,girasol S.30 soles .jpg' },
-    { nombre: 'Arreglo de 8 rosas gerberas,girasoles', precio: 50, img: 'images/rosas/19.-arreglo de 8 rosas gerberas,girasoles S.50 soles .jpg' },
-    { nombre: 'Arreglo clasico 12 rosas gerberas,girasoles', precio: 65, img: 'images/rosas/20.-arreglo clasico 12 rosas gerberas,girasoles 65 soles .jpg' },
-    { nombre: 'Arreglo 8 rosas ginger,girasoles', precio: 50, img: 'images/rosas/21.-arreglo 8 rosas ginger,girasoles S.50 soles .jpg' },
-    { nombre: 'Arreglo de 3 rosas mas girasol', precio: 30, img: 'images/rosas/22.-arreglo de 3 rosas mas girasol S.30 soles .jpg' },
-    { nombre: 'Arreglo 10 rosas', precio: 55, img: 'images/rosas/23.-arreglo 10 rosas S. 55 soles .jpg' },
-    { nombre: 'Arreglo 5 rosas', precio: 40, img: 'images/rosas/24.- arreglo 5 rosas S.40 soles .jpg' },
-    { nombre: 'Arreglo 5 rosas', precio: 40, img: 'images/rosas/25.- arreglo 5 rosas S.40 soles .jpg' },
-    { nombre: 'Arreglo 8 rosas ,girasol,gerberas', precio: 50, img: 'images/rosas/26.- arreglo 8 rosas ,girasol,gerberas S.50 soles.jpg' },
-    { nombre: 'Arreglo 5 rosas', precio: 40, img: 'images/rosas/27.-arreglo 5 rosas S.40 soles .jpg' },
-    { nombre: 'Arreglo 7 rosas', precio: 45, img: 'images/rosas/28.- arreglo 7 rosas S.45 soles .jpg' },
-    { nombre: 'Arreglo 12 rosas lilum', precio: 65, img: 'images/rosas/29.- arreglo 12 rosas lilum S.65 soles .jpg' },
-    { nombre: 'Arreglo 5 rosas mas gerbera', precio: 40, img: 'images/rosas/30.-arreglo 5 rosas mas gerbera S.40 soles .jpg' },
-    { nombre: 'Arreglo 8 rosas,lilium', precio: 55, img: 'images/rosas/31.- arreglo 8 rosas,lilium S.55 soles .jpg' },
-    { nombre: 'Arreglo 8 rosas', precio: 50, img: 'images/rosas/32.-arreglo 8 rosas S.50 soles .jpg' },
-    { nombre: 'Arreglo 3 rosas amarrillas', precio: 30, img: 'images/rosas/33.-arreglo 3 rosas amarrillas S.30 soles .jpg' },
-    { nombre: 'Arreglo clasico de 9 rosas', precio: 50, img: 'images/rosas/34.-arreglo clasico de 9 rosas S.50 soles .jpg' },
-    { nombre: 'Arreglo clasico 9 rosas', precio: 50, img: 'images/rosas/35.- arreglo clasico 9 rosas S.50 soles .jpg' },
-    { nombre: 'Arreglo 12 rosas', precio: 60, img: 'images/rosas/36.-arreglo 12 rosas S.60 soles .jpg' },
-    { nombre: 'Arreglo de 9 rosas ,gerbera', precio: 55, img: 'images/rosas/37.- arreglo de 9 rosas ,gerbera S.55 soles .jpg' },
-    { nombre: 'Arreglo de 5 rosas', precio: 40, img: 'images/rosas/38.-arreglo de 5 rosas S.40 soles .jpg' },
+    { nombre: 'Arreglo de rosas con liliums y gerberas', precio: 70, img: 'images/rosas/16.-arreglo de rosas,liliums,gerberas,S.70 soles .jpg' },
+    { nombre: 'Arreglo de 5 rosas', precio: 40, img: 'images/rosas/17.-arreglos de 5 rosas S.40 soles .jpg' },
+    { nombre: 'Arreglo de 3 rosas con girasol', precio: 30, img: 'images/rosas/18.-arreglo de 3 rosas,girasol S.30 soles .jpg' },
+    { nombre: 'Arreglo de 8 rosas con gerberas y girasoles', precio: 50, img: 'images/rosas/19.-arreglo de 8 rosas gerberas,girasoles S.50 soles .jpg' },
+    { nombre: 'Arreglo clásico de 12 rosas con gerberas y girasoles', precio: 65, img: 'images/rosas/20.-arreglo clasico 12 rosas gerberas,girasoles 65 soles .jpg' },
+    { nombre: 'Arreglo de 8 rosas con jengibre y girasoles', precio: 50, img: 'images/rosas/21.-arreglo 8 rosas ginger,girasoles S.50 soles .jpg' },
+    { nombre: 'Arreglo de 3 rosas con girasol', precio: 30, img: 'images/rosas/22.-arreglo de 3 rosas mas girasol S.30 soles .jpg' },
+    { nombre: 'Arreglo de 10 rosas', precio: 55, img: 'images/rosas/23.-arreglo 10 rosas S. 55 soles .jpg' },
+    { nombre: 'Arreglo de 5 rosas', precio: 40, img: 'images/rosas/24.- arreglo 5 rosas S.40 soles .jpg' },
+    { nombre: 'Arreglo de 5 rosas', precio: 40, img: 'images/rosas/25.- arreglo 5 rosas S.40 soles .jpg' },
+    { nombre: 'Arreglo de 8 rosas con girasol y gerberas', precio: 50, img: 'images/rosas/26.- arreglo 8 rosas ,girasol,gerberas S.50 soles.jpg' },
+    { nombre: 'Arreglo de 5 rosas', precio: 40, img: 'images/rosas/27.-arreglo 5 rosas S.40 soles .jpg' },
+    { nombre: 'Arreglo de 7 rosas', precio: 45, img: 'images/rosas/28.- arreglo 7 rosas S.45 soles .jpg' },
+    { nombre: 'Arreglo de 12 rosas con lilium', precio: 65, img: 'images/rosas/29.- arreglo 12 rosas lilum S.65 soles .jpg' },
+    { nombre: 'Arreglo de 5 rosas con gerbera', precio: 40, img: 'images/rosas/30.-arreglo 5 rosas mas gerbera S.40 soles .jpg' },
+    { nombre: 'Arreglo de 8 rosas con lilium', precio: 55, img: 'images/rosas/31.- arreglo 8 rosas,lilium S.55 soles .jpg' },
+    { nombre: 'Arreglo de 8 rosas', precio: 50, img: 'images/rosas/32.-arreglo 8 rosas S.50 soles .jpg' },
+    { nombre: 'Arreglo de 3 rosas amarillas', precio: 30, img: 'images/rosas/33.-arreglo 3 rosas amarrillas S.30 soles .jpg' },
+    { nombre: 'Arreglo clásico de 9 rosas', precio: 50, img: 'images/rosas/34.-arreglo clasico de 9 rosas S.50 soles .jpg' },
+    { nombre: 'Arreglo clásico de 9 rosas', precio: 50, img: 'images/rosas/35.- arreglo clasico 9 rosas S.50 soles .jpg' },
+    { nombre: 'Arreglo de 12 rosas', precio: 60, img: 'images/rosas/36.-arreglo 12 rosas S.60 soles .jpg' },
+    { nombre: 'Arreglo de 9 rosas con gerbera', precio: 55, img: 'images/rosas/37.- arreglo de 9 rosas ,gerbera S.55 soles .jpg' },
+    { nombre: 'Arreglo de 5 rosas', precio: 40, img: 'images/rosas/38.-arreglo de 5 rosas S.40 soles .jpg' }
   ],
 
   girasoles: [
@@ -198,33 +198,33 @@ const PRODUCTOS = {
   ],
 
   box: [
-    { nombre: "Arreglo box negro rosas, lilum", precio: 55, img: "images/box/1.-Arreglo box negro rosas, lilum S.55 soles .png" },
-    { nombre: "Arreglo de box blanco rosas ,lilum", precio: 65, img: "images/box/2.-Arreglo de box blanco rosas ,lilum S.65 soles .jpg" },
-    { nombre: "Arreglo de carreta rosas, lilium , gerberas", precio: 70, img: "images/box/3.-Arreglo de carreta  rosas, lilium , gerberas S.70 soles.jpg" },
-    { nombre: "Arreglo en carreta rosas, lilium, gerberas, bambu", precio: 75, img: "images/box/4.-Arreglo en carreta rosas, lilium, gerberas, bambu S.75 soles .jpg" },
-    { nombre: "Arreglo box rosas, lilum, gerberas", precio: 65, img: "images/box/5.-Arreglo box rosas, lilum, gerberas S.65 soles .jpg" },
-    { nombre: "Arreglo canasta de rosas lilum, gerbera", precio: 65, img: "images/box/6.-Arreglo canasta de rosas lilum, gerbera S. 65 soles .jpg" },
-    { nombre: "Arreglo canasta rosas lilium, gerberas", precio: 65, img: "images/box/7.-Arreglo canasta rosas lilium, gerberas S. 65 soles .jpg" },
-    { nombre: "Arreglo carreta rosas lilum, gerberas", precio: 75, img: "images/box/8.-Arreglo carreta rosas lilum, gerberas S.75 soles .jpg" },
-    { nombre: "Arreglo box", precio: 70, img: "images/box/9.-Arreglo box 70 S. soles .jpg" },
-    { nombre: "Arreglo canasta", precio: 60, img: "images/box/10.-Arreglo canasta S.60 soles.jpg" },
-    { nombre: "Box rosas , lilium, gerbera, girasol", precio: 65, img: "images/box/11.-Box rosas , lilium, gerbera, girasol S.65 soles.jpg" },
-    { nombre: "Box rosas, girasol, lilium", precio: 65, img: "images/box/12.-Box rosas, girasol, lilium S.65 soles .jpg" },
-    { nombre: "Arreglo box", precio: 65, img: "images/box/13.-Arreglo box S.65 soles .jpg" },
-    { nombre: "Arreglo box", precio: 65, img: "images/box/14.-Arreglo box S.65 soles .jpg" },
-    { nombre: "Arreglo box", precio: 65, img: "images/box/15.-Arreglo box S.65 soles .jpeg" },
-    { nombre: "Arreglo box", precio: 65, img: "images/box/16.- Arreglo box S.65 soles .jpg" },
-    { nombre: "Arreglo canasta", precio: 65, img: "images/box/17.-Arreglo canasta S.65 soles .jpg" },
-    { nombre: "Arreglo box", precio: 80, img: "images/box/18.-Arreglo box S.80 soles.jpg" },
-    { nombre: "Arreglo canasta", precio: 65, img: "images/box/19.-Arreglo canasta S.65 soles .jpg" },
-    { nombre: "Arreglo canasta", precio: 50, img: "images/box/20.-Arreglo canasta S.50 soles .jpg" },
-    { nombre: "Arreglo box", precio: 55, img: "images/box/21.-Arreglo box S.55 soles .jpg" },
-    { nombre: "Arreglos canasta", precio: 65, img: "images/box/22.-Arreglos canasta S.65 soles .jpg" },
-    { nombre: "Arreglo box", precio: 55, img: "images/box/23.-Arreglo box S.55 soles.jpg" },
-    { nombre: "Arreglo box", precio: 55, img: "images/box/24.-Arreglo box S.55 soles .jpg" },
-    { nombre: "Arreglo canasta", precio: 65, img: "images/box/25.-Arreglo canasta S.65 soles.jpg" },
-    { nombre: "Arreglo box", precio: 50, img: "images/box/26.-Arreglo box S.50 soles.jpg" },
-    { nombre: "Arreglo box", precio: 65, img: "images/box/27.-Arreglo box S.65 soles .jpg" }
+    { nombre: "Arreglo box negro con rosas y Lilium", precio: 55, img: "images/box/1.-Arreglo box negro rosas, lilum S.55 soles .png" },
+    { nombre: "Arreglo box blanco con rosas y Lilium", precio: 65, img: "images/box/2.-Arreglo de box blanco rosas ,lilum S.65 soles .jpg" },
+    { nombre: "Arreglo en carreta con rosas, Lilium y gerberas", precio: 70, img: "images/box/3.-Arreglo de carreta  rosas, lilium , gerberas S.70 soles.jpg" },
+    { nombre: "Arreglo en carreta con rosas, Lilium, gerberas y bambú", precio: 75, img: "images/box/4.-Arreglo en carreta rosas, lilium, gerberas, bambu S.75 soles .jpg" },
+    { nombre: "Arreglo box con rosas, Lilium y gerberas", precio: 65, img: "images/box/5.-Arreglo box rosas, lilum, gerberas S.65 soles .jpg" },
+    { nombre: "Arreglo en canasta con rosas, Lilium y gerbera", precio: 65, img: "images/box/6.-Arreglo canasta de rosas lilum, gerbera S. 65 soles .jpg" },
+    { nombre: "Arreglo en canasta con rosas, Lilium y gerberas", precio: 65, img: "images/box/7.-Arreglo canasta rosas lilium, gerberas S. 65 soles .jpg" },
+    { nombre: "Arreglo en carreta con rosas, Lilium y gerberas", precio: 75, img: "images/box/8.-Arreglo carreta rosas lilum, gerberas S.75 soles .jpg" },
+    { nombre: "Arreglo box floral", precio: 70, img: "images/box/9.-Arreglo box 70 S. soles .jpg" },
+    { nombre: "Arreglo floral en canasta", precio: 60, img: "images/box/10.-Arreglo canasta S.60 soles.jpg" },
+    { nombre: "Box floral con rosas, Lilium, gerbera y girasol", precio: 65, img: "images/box/11.-Box rosas , lilium, gerbera, girasol S.65 soles.jpg" },
+    { nombre: "Box floral con rosas, girasol y Lilium", precio: 65, img: "images/box/12.-Box rosas, girasol, lilium S.65 soles .jpg" },
+    { nombre: "Arreglo box floral", precio: 65, img: "images/box/13.-Arreglo box S.65 soles .jpg" },
+    { nombre: "Arreglo box floral", precio: 65, img: "images/box/14.-Arreglo box S.65 soles .jpg" },
+    { nombre: "Arreglo box floral", precio: 65, img: "images/box/15.-Arreglo box S.65 soles .jpeg" },
+    { nombre: "Arreglo box floral", precio: 65, img: "images/box/16.- Arreglo box S.65 soles .jpg" },
+    { nombre: "Arreglo floral en canasta", precio: 65, img: "images/box/17.-Arreglo canasta S.65 soles .jpg" },
+    { nombre: "Arreglo box floral premium", precio: 80, img: "images/box/18.-Arreglo box S.80 soles.jpg" },
+    { nombre: "Arreglo floral en canasta", precio: 65, img: "images/box/19.-Arreglo canasta S.65 soles .jpg" },
+    { nombre: "Arreglo floral en canasta", precio: 50, img: "images/box/20.-Arreglo canasta S.50 soles .jpg" },
+    { nombre: "Arreglo box floral", precio: 55, img: "images/box/21.-Arreglo box S.55 soles .jpg" },
+    { nombre: "Arreglo floral en canasta", precio: 65, img: "images/box/22.-Arreglos canasta S.65 soles .jpg" },
+    { nombre: "Arreglo box floral", precio: 55, img: "images/box/23.-Arreglo box S.55 soles.jpg" },
+    { nombre: "Arreglo box floral", precio: 55, img: "images/box/24.-Arreglo box S.55 soles .jpg" },
+    { nombre: "Arreglo floral en canasta", precio: 65, img: "images/box/25.-Arreglo canasta S.65 soles.jpg" },
+    { nombre: "Arreglo box floral", precio: 50, img: "images/box/26.-Arreglo box S.50 soles.jpg" },
+    { nombre: "Arreglo box floral", precio: 65, img: "images/box/27.-Arreglo box S.65 soles .jpg" }
   ],
   condolencias: [
     {
@@ -522,7 +522,12 @@ function renderCategoriasArreglos() {
   const cont = document.getElementById("arreglos-categorias");
   if (!cont) return;
 
-  cont.innerHTML = CATEGORIAS_ARREGLOS.map(cat => `
+  // ✅ Solo categorías de ARREGLOS (NO eventos)
+  const CATS_SOLO_ARREGLOS = CATEGORIAS_ARREGLOS.filter(cat =>
+    !["eventos_sociales", "eventos_realizados"].includes(cat.id)
+  );
+
+  cont.innerHTML = CATS_SOLO_ARREGLOS.map(cat => `
     <div class="producto">
       <img src="${cat.img}" alt="${cat.nombre}">
       <div class="info">
@@ -578,20 +583,12 @@ function initCategoriaPage() {
       alt="${p.nombre}"
       style="cursor: zoom-in"
       onclick="openLightboxIndex(${lightboxImages.indexOf(p.img)})"
-
     >
     <div class="info">
       <h3>${p.nombre}</h3>
 
-      ${catId === "eventos_realizados"
-        ? ""
-        : `<p class="precio">S/ ${Number(p.precio).toFixed(2)}</p>`
-      }
-
-      ${catId === "eventos_realizados"
-        ? ""
-        : `<button onclick="pedirWhatsApp('${p.nombre.replace(/'/g, "\\'")}')">Pedir por WhatsApp</button>`
-      }
+      ${catId === "eventos_realizados" ? "" : `<p class="precio">S/ ${Number(p.precio).toFixed(2)}</p>`}
+      ${catId === "eventos_realizados" ? "" : `<button onclick="pedirWhatsApp('${p.nombre.replace(/'/g, "\\'")}')">Pedir por WhatsApp</button>`}
     </div>
   </div>
 `).join("");
@@ -751,6 +748,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
 
 
 
